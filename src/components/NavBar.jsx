@@ -1,4 +1,5 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
@@ -64,6 +65,7 @@ const NavBar = () => {
                 </ul>
               </li>
             </ul>
+            <CartWidget />
             <form class="d-flex">
               <input
                 class="form-control me-2"
@@ -77,7 +79,7 @@ const NavBar = () => {
             </form>
           </div>
         </div>
-      </nav>
+      </nav>      
     </div>
   );
 };
