@@ -1,10 +1,11 @@
 import React from 'react'
-import icon from '../icon-cart.png'
+import {TiShoppingCart} from 'react-icons/ti'
+
 
 function CartWidget() {
   return (
-    <div className='CartWidget'>
-      <img src={icon} alt="" />
+    <div>
+      <TiShoppingCart className='colorIcon'/>
     </div>
   )
 }

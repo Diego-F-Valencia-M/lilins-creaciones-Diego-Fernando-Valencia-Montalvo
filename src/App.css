@@ -1,4 +1,23 @@
-.CartWidget img{
-  width: 50px;
+.colorIcon{
+  width: 40px;
+  height: 40px;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  width: 250px;
   height: 50px;
+  margin-left: 20px ;
+  border-radius: 8px;
+  
+}
+
+.botones p{
+  margin: 10px;
+}
+
+.comprar{
+  margin: 5px;
 }
