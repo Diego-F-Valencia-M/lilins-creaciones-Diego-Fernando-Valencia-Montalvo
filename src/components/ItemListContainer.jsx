@@ -1,14 +1,22 @@
-import React from 'react'
-import ItemCount from './ItemCount'
+import React, { useEffect, useState } from 'react'
+import promesas from './promesas';
+import ItemList from './ItemList';
+import productos from './productos';
 
 
 const ItemListContainer = () => {
 
- 
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    promesas(3000, productos)
+    .then(resultado => setItems(resultado))
+    .catch(error => console.log(error));
+  }, [items]);
 
   return (
     <div>
-    <ItemCount stock={5} />
+        <ItemList productos={items} />
     </div>
   )
 }
