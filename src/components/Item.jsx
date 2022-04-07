@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card'
 import ItemCount from './ItemCount'
 
 
-const Item = ([id, nombre, precio, imagen]) => {
+const Item = ({id, nombre, precio, imagen}) => {
   return (
     
       <Card key={id} style={{ width: "18rem" }}>

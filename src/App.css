@@ -21,3 +21,9 @@
 .comprar{
   margin: 5px;
 }
+
+.items{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
